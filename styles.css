@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.form-container {
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reward-options {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.radio-group label:hover {
+    background-color: #e8f0fe;
+}
+
+input[type="email"] {
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+#confirmReward {
+    background-color: #34a853;
+    width: 100%;
+}
+
+#confirmReward:hover {
+    background-color: #2d9249;
+}
+
+.message {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.message.success {
+    display: block;
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+.message.error {
+    display: block;
+    background-color: #fce8e6;
+    color: #c5221f;
+} 

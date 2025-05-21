@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Tecnología 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta de Tecnología 2025</h1>
+        <div class="form-container">
+            <form id="emailForm">
+                <input type="email" id="emailInput" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit">Verificar</button>
+            </form>
+            <div id="rewardSection" class="reward-options" style="display: none;">
+                <h3>Selecciona tu recompensa:</h3>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="reward" value="superSelectos" required>
+                        Vale de Super Selectos por $10
+                    </label>
+                    <label>
+                        <input type="radio" name="reward" value="bac" required>
+                        Retiro por BAC por $5
+                    </label>
+                </div>
+                <button type="button" id="confirmReward">Confirmar Recompensa</button>
+            </div>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
